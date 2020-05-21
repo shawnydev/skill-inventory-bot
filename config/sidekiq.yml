@@ -1,0 +1,12 @@
+:schedule:
+  git_crawling:
+    cron: '0 * * * * Asia/Seoul'   # Runs every hour
+#    cron: '* * * * * Asia/Seoul'   # Runs every hour
+    class: Scheduler::GitCrawler
+  slack_notify:
+    cron: '0 11,18 * * 1-5 Asia/Seoul'   # Runs 주중 11:00, 18:00
+#    cron: '* * * * * Asia/Seoul'   # Runs 주중 10:00, 19:00
+    class: Scheduler::SlackNotify
+
+:logfile: ./log/sidekiq.log
+

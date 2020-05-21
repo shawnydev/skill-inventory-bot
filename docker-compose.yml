@@ -1,0 +1,14 @@
+version: '3'
+
+services:
+  redis:
+    image: sickp/alpine-redis
+    ports:
+      - '6379:6379'
+  sidekiq:
+    depends_on:
+      - 'redis' 
+    build: .
+    command: bundle exec sidekiq
+    environment:
+     - REDIS_PROVIDER=redis://redis:6379/0
