@@ -1,41 +1,7 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+"출퇴근개발길읽기" 라는 개발 관련 컨텐츠 모음 커뮤니티를 크롤링하여 채팅방에 노티해둔 토픽입니다.
+하루 2번, 11시, 18시에 노티되도록 설정되있습니다.
+짬내서 읽어보시면 좋을 듯합니다. :)
 
-Things you may want to cover:
-
-* Ruby version
-    - 2.6.5
-
-* System dependencies
-    - TBD
-
-* Configuration
-    - .env
-
-* Database creation
-    - `rails db:create`
-
-* Database initialization
-    - `rails db:migrate db:seed`
-
-* How to run the test suite
-    - `rails test`
-
-* Services (job queues, cache servers, search engines, etc.)
-    - TBD
-
-* Deployment instructions
-    - TBD
-
-* Gems
-    - dotenv-rails: .env for env variables
-    - annotate: add comments in models, ... based on table
-    - pry*: console & debuggin
-    - ordinare: ordering Gemfile
-    - guard, terminal-notifier-guard: test helper
-
-* sample bot run
-    - .env set SLACK_API_TOKEN value
-    - `ruby lib/bot/pong_bot.rb`
+사용 기술스택 : Sidekiq(Background Worker), Redis, RoR, Jandi IncomingHook, Docker Container
