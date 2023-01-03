@@ -66,7 +66,7 @@ group :test do
 end
 
 # HTTP 통신
-gem 'httparty', '~> 0.17.0'
+gem 'httparty', '~> 0.21.0'
 
 # Schedule 작업
 gem 'sidekiq', '5.2.8'
